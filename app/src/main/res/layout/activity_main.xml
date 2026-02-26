@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true"> <!-- garante que LinearLayout ocupe toda a altura -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Display -->
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text="0"
+            android:textSize="36sp"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:padding="16dp"/>
+
+        <!-- Grid de botões -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:layout_marginTop="10dp"
+            android:useDefaultMargins="true">
+
+            <!-- Linha científica -->
+            <Button android:text="sin" style="@style/BotaoCientifico"/>
+            <Button android:text="cos" style="@style/BotaoCientifico"/>
+            <Button android:text="tan" style="@style/BotaoCientifico"/>
+            <Button android:text="√" style="@style/BotaoCientifico"/>
+
+            <Button android:text="^" style="@style/BotaoCientifico"/>
+            <Button android:text="log" style="@style/BotaoCientifico"/>
+            <Button android:text="(" style="@style/BotaoCientifico"/>
+            <Button android:text=")" style="@style/BotaoCientifico"/>
+
+            <!-- Linha números -->
+            <Button android:text="7" style="@style/BotaoNumero"/>
+            <Button android:text="8" style="@style/BotaoNumero"/>
+            <Button android:text="9" style="@style/BotaoNumero"/>
+            <Button android:text="/" style="@style/BotaoOperador"/>
+
+            <Button android:text="4" style="@style/BotaoNumero"/>
+            <Button android:text="5" style="@style/BotaoNumero"/>
+            <Button android:text="6" style="@style/BotaoNumero"/>
+            <Button android:text="*" style="@style/BotaoOperador"/>
+
+            <Button android:text="1" style="@style/BotaoNumero"/>
+            <Button android:text="2" style="@style/BotaoNumero"/>
+            <Button android:text="3" style="@style/BotaoNumero"/>
+            <Button android:text="-" style="@style/BotaoOperador"/>
+
+            <Button android:text="0" style="@style/BotaoNumero"/>
+            <Button android:text="." style="@style/BotaoNumero"/>
+            <Button android:text="=" style="@style/BotaoIgual"/>
+            <Button android:text="+" style="@style/BotaoOperador"/>
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

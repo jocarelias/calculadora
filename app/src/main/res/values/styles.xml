@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Botões numéricos -->
+    <style name="BotaoNumero">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#1F1F1F</item> <!-- fundo mais escuro e moderno -->
+    </style>
+
+    <!-- Botões de operadores (+, -, *, /) -->
+    <style name="BotaoOperador">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FF9800</item> <!-- laranja vibrante -->
+        <item name="android:backgroundTint">#2C2C2C</item> <!-- escuro -->
+    </style>
+
+    <!-- Botões científicos (sin, cos, log, etc) -->
+    <style name="BotaoCientifico">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">#4CAF50</item> <!-- verde moderno -->
+        <item name="android:backgroundTint">#2C2C2C</item>
+    </style>
+
+    <!-- Botão igual (=) -->
+    <style name="BotaoIgual">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- branco para contraste -->
+        <item name="android:backgroundTint">#03A9F4</item> <!-- azul moderno e chamativo -->
+    </style>
+
+</resources>
